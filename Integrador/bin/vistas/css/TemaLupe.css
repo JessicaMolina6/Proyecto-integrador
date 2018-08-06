@@ -1,0 +1,105 @@
+.background {
+    -fx-background-color:  #6469C4;
+    -fx-border-color: black;
+	-fx-border-radius:5;
+
+}
+.background2 {
+    -fx-background-color: #00008B;
+}
+.background3 {
+    -fx-background-color: BLACK;
+}
+.background4 {
+    -fx-background-color: #000033;
+}
+
+
+
+.label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+
+}
+
+.label2 {
+    -fx-font-size: 25pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: BLACK;
+
+}
+.label3 {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: BLACK;
+
+}
+
+
+
+.table-view {
+
+    -fx-base: red;
+    -fx-control-inner-background: white;
+    -fx-background-color: white;
+    -fx-table-cell-border-color: red;
+    -fx-table-header-border-color: red;
+    -fx-padding: 2;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 25;
+    -fx-border-width: 0  0 1 0;
+    -fx-background-color: white;
+    -fx-border-color: black ;
+    -fx-border-insets: 0 10 1 0;
+    -fx-text-fill: black;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 15pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: black;
+    -fx-alignment: center-left;
+
+}
+
+
+
+ /*COLOR DEL TEXT FIELD */
+
+.text-field{
+
+    -fx-font-size: 13pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+  -fx-background-color: #7c80cc ;
+    -fx-text-fill: white;
+}
+
+
+
+
+ /*COLOR DEL BUTTON */
+.button {
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: transparent;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color:  #f9e6ff;
+    -fx-font-family: "Segoe UI Light", Helvetica, Arial, sans-serif;
+    -fx-font-size:9pt;
+    -fx-text-fill: black;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}

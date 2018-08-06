@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="640.0" style="-fx-background-color: WHITE;" stylesheets="@css/TemaLupe.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorMenu">
+   <children>
+      <TilePane layoutX="80.0" layoutY="140.0" prefHeight="267.0" prefWidth="507.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0">
+         <children>
+          <Button fx:id="btnVentas" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickVentas" prefHeight="160.0" prefWidth="160.0" style="-fx-background-color: transparent;" text="Ventas">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Img/codigo-de-barras.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnCliente" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickUsuarios" prefHeight="160.0" prefWidth="160.0" style="-fx-background-color: transparent;" text="Clientes">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Img/clientes.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnEmpleados" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickEmpleados" prefHeight="160.0" prefWidth="160.0" style="-fx-background-color: transparent;" text="Empleados">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Img/empleados.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnReportes" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickReportes" prefHeight="160.0" prefWidth="160.0" style="-fx-background-color: transparent;" text="Reportes">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Img/reportes.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnProveedor" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickProveedores" prefHeight="160.0" prefWidth="160.0" style="-fx-background-color: transparent;" text="Proveedores">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Img/outsourcing-outside-foreign-supplier-people-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnProducto" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickProductos" prefHeight="160.0" prefWidth="160.0" style="-fx-background-color: transparent;" text="Productos">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Img/compras.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </TilePane>
+      <AnchorPane prefHeight="127.0" prefWidth="640.0" style="-fx-background-color: #6469C4;">
+         <children>
+            <ImageView fitHeight="137.0" fitWidth="233.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Img/Logo%20Leo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblMensaje" layoutX="265.0" layoutY="6.0" prefHeight="45.0" prefWidth="361.0" />
+            <Label fx:id="lblHora" layoutX="265.0" layoutY="66.0" prefHeight="28.0" prefWidth="361.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

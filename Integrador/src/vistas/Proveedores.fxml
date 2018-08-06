@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<AnchorPane minWidth="-Infinity" prefHeight="533.0" prefWidth="954.0" stylesheets="@css/TemaLupe.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorProveedores">
+   <children>
+      <ToolBar layoutX="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="935.0" styleClass="background" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+            <ImageView fitHeight="65.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Img/Logo%20Leo.png" />
+               </image>
+            </ImageView>
+          <Button fx:id="btnNuevo" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickNuevo" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Nuevo">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconos/add-1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnGuardar" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickGuardar" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Guardar">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconos/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnEliminar" contentDisplay="TOP" graphicTextGap="0.0" mnemonicParsing="false" onAction="#clickEliminar" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Eliminar" textOverrun="CLIP">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconos/trash.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnEditar" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickEditar" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Editar">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconos/edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnCancelar" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickCancelar" prefHeight="69.0" prefWidth="103.0" style="-fx-background-color: transparent;" text="Cancelar">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconos/error.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label alignment="CENTER_RIGHT" prefHeight="55.0" prefWidth="228.0" styleClass="label2" text="Proveedores">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </Label>
+        </items>
+      </ToolBar>
+      <Pane layoutX="-1.0" layoutY="65.0" prefHeight="468.0" prefWidth="291.0" styleClass="background" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="65.0">
+         <children>
+            <GridPane layoutX="21.0" layoutY="19.0" prefHeight="452.0" prefWidth="243.0">
+               <children>
+                  <VBox prefHeight="68.0" prefWidth="269.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label text="Nombre:" />
+                        <TextField fx:id="txtNombre" minHeight="-Infinity" prefHeight="32.0" prefWidth="414.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="76.0" prefWidth="264.0" GridPane.rowIndex="2">
+                     <children>
+                        <Label text="Telefono:" />
+                        <TextField fx:id="txtTelefono" minHeight="-Infinity" prefHeight="32.0" prefWidth="272.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="45.0" prefWidth="306.0" GridPane.rowIndex="3">
+                     <children>
+                        <Label text="Correo:" />
+                        <TextField fx:id="txtCorreo" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="32.0" prefWidth="275.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="47.0" prefWidth="300.0" GridPane.rowIndex="4">
+                     <children>
+                        <Label text="Direccion:" />
+                        <TextField maxHeight="-Infinity" minHeight="-Infinity" prefHeight="32.0" prefWidth="275.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="20.0" prefWidth="319.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="259.0" minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="247.0" minHeight="4.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="215.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="199.0" minHeight="0.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="177.0" minHeight="0.0" prefHeight="80.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </Pane>
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="741.0" layoutY="86.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="31.0" prefWidth="31.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: transparent;">
+               <image>
+                  <Image url="@iconos/search-1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="tvProveedores" layoutX="319.0" layoutY="133.0" onMouseClicked="#clickTabla" prefHeight="359.0" prefWidth="612.0">
+        <columns>
+          <TableColumn prefWidth="168.33334350585938" text="Nombre">
+          	<cellValueFactory>
+          		<PropertyValueFactory property="compania_proveedor" />
+          	</cellValueFactory>
+          </TableColumn>
+          <TableColumn minWidth="7.0" prefWidth="143.33331298828125" text="Telefono">
+          	<cellValueFactory>
+          		<PropertyValueFactory property="telefono" />
+          	</cellValueFactory>
+          </TableColumn>
+            <TableColumn prefWidth="153.3333740234375" text="Correo">
+            	<cellValueFactory>
+            		<PropertyValueFactory property="correo" />
+            	</cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="140.3333740234375" text="Direccion" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtBuscador" layoutX="319.0" layoutY="85.0" minHeight="-Infinity" onAction="#textChange_busqueda" prefHeight="32.0" prefWidth="414.0" promptText="Buscar" styleClass="label2" />
+      <CheckBox fx:id="ckbInactivos" onAction="#clickInactivos" layoutX="328.0" layoutY="502.0" mnemonicParsing="false" text="Mostrar inactivos" />
+   </children>
+</AnchorPane>

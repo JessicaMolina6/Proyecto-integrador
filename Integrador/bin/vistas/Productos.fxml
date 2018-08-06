@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:controller="controlador.ControladorProductos" prefHeight="533.0" prefWidth="954.0" stylesheets="@css/TemaLupe.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="324.0" fitWidth="373.0" layoutX="313.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="114.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="95.0">
+         <image>
+            <Image url="@Img/taza-con-foto-magia.05a4ad32.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="400.0" layoutY="467.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="72.0" style="-fx-background-color: transparent;" />
+      <Button layoutX="127.0" layoutY="467.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="72.0" style="-fx-background-color: transparent;" />
+      <ToolBar minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="1147.0" styleClass="background">
+         <items>
+            <ImageView fitHeight="65.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Img/Logo%20Leo.png" />
+               </image>
+            </ImageView>
+            <Button onAction="#clickBoton" contentDisplay="TOP" mnemonicParsing="false" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Nuevo">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconos/add-1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button onAction="#clickBoton" contentDisplay="TOP" mnemonicParsing="false" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Guardar">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconos/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button contentDisplay="TOP" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Eliminar" textOverrun="CLIP">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconos/trash.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button onAction="#clickBoton" contentDisplay="TOP" mnemonicParsing="false" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Editar">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconos/edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="69.0" prefWidth="103.0" style="-fx-background-color: transparent;" text="Cancelar">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconos/error.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button onAction="#clickBoton" alignment="TOP_CENTER" cacheShape="false" centerShape="false" contentDisplay="TOP" focusTraversable="false" mnemonicParsing="false" prefHeight="67.0" prefWidth="122.0" scaleShape="false" style="-fx-background-color: transparent;" text="Catálogo" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="62.0" opacity="0.57" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Img/if_list_296566.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="277.0" styleClass="label2" text="Productos">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="677.0" layoutY="462.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="300.0">
+         <image>
+            <Image url="@Img/siguiente.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="57.0" layoutX="306.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="300.0">
+         <image>
+            <Image url="@Img/atras.png" />
+         </image>
+      </ImageView>
+      <ComboBox layoutX="179.0" layoutY="83.0" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="82.0" prefHeight="27.0" prefWidth="142.0" text="Tipo Producto: " />
+   </children>
+</AnchorPane>

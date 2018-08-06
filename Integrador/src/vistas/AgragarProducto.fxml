@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<AnchorPane prefHeight="533.0" prefWidth="954.0" stylesheets="@css/TemaLupe.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorProductosFunciones">
+   <children>
+      <ToolBar minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="1147.0" styleClass="background">
+         <items>
+            <ImageView fitHeight="65.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Img/Logo%20Leo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnNuevo" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickNuevo" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Nuevo">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconos/add-1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnGuardar" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickGuardar" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Guardar">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconos/save.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnEliminar" contentDisplay="TOP" graphicTextGap="0.0" mnemonicParsing="false" onAction="#clickEliminar" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Eliminar" textOverrun="CLIP">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconos/trash.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnEditar" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickEditar" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: transparent;" text="Editar">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconos/edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnCancelar" contentDisplay="TOP" mnemonicParsing="false" onAction="#clickCancelar" prefHeight="69.0" prefWidth="103.0" style="-fx-background-color: transparent;" text="Cancelar">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconos/error.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="TOP_CENTER" cacheShape="false" centerShape="false" contentDisplay="TOP" focusTraversable="false" mnemonicParsing="false" prefHeight="67.0" prefWidth="122.0" scaleShape="false" style="-fx-background-color: transparent;" text="Catálogo" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="62.0" opacity="0.57" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Img/if_list_296566.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="277.0" styleClass="label2" text="Productos">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <Label layoutX="155.0" layoutY="106.0" prefHeight="35.0" prefWidth="103.0" text="Nombre: " textFill="#5e5e5e">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Label layoutX="193.0" layoutY="155.0" text="Label" />
+      <Label layoutX="193.0" layoutY="200.0" text="Label" />
+      <TableView fx:id="tvProductos" layoutX="522.0" layoutY="90.0" onMouseClicked="#clickTabla" prefHeight="383.0" prefWidth="611.0">
+        <columns>
+          <TableColumn prefWidth="112.0" text="Nombre">
+          	<cellValueFactory>
+          		<PropertyValueFactory property="descripcion" />
+          	</cellValueFactory>
+          </TableColumn>
+            <TableColumn minWidth="0.0" prefWidth="120.0" text="Descripción">
+            	<cellValueFactory>
+            		<PropertyValueFactory property="clave_tipo_producto" />
+            	</cellValueFactory>
+            </TableColumn>
+            <TableColumn minWidth="0.0" prefWidth="76.0" text="Tipo">
+            	<cellValueFactory>
+            		<PropertyValueFactory property="precioMayoreo" />
+            	</cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150.0" text="Precio Menoreo">
+            	<cellValueFactory>
+            		<PropertyValueFactory property="precioMenoreo" />
+            	</cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="153.0" text="Precio Mayoreo" />
+        </columns>
+      </TableView>
+      <Pane layoutX="-2.0" layoutY="69.0" prefHeight="461.0" prefWidth="372.0" styleClass="background">
+         <children>
+            <GridPane prefHeight="461.0" prefWidth="372.0">
+               <children>
+                  <Label text="Nombre producto: " />
+                  <Label text="Tipo producto: " GridPane.rowIndex="1" />
+                  <Label text="Descripción: " GridPane.rowIndex="2" />
+                  <Label text="Precio Mayoreo: " GridPane.rowIndex="3" />
+                  <Label text="Precio Menoreo: " GridPane.rowIndex="4" />
+                  <TextField fx:id="txtNombre" GridPane.columnIndex="1" />
+                  <TextField fx:id="txtDescripcion" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtPrecioMenoreo" prefHeight="38.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="txtPrecioMayoreo" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtRuta" GridPane.rowIndex="6" />
+                  <ComboBox fx:id="cbTipoProducto" prefHeight="30.0" prefWidth="186.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Imagen: " GridPane.rowIndex="5" />
+                  <ImageView fx:id="imgProducto" fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Button fx:id="btnSeleccionarImagen" mnemonicParsing="false" onAction="#clickSeleccionar" text="Seleccionar" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </Pane>
+      <CheckBox fx:id="cbkInactivos" layoutX="411.0" layoutY="496.0" mnemonicParsing="false" onAction="#clickInactivos" text="Mostrar Inactivos" />
+      <TableView fx:id="images" layoutX="370.0" layoutY="82.0" prefHeight="392.0" prefWidth="152.0">
+        <columns>
+          <TableColumn prefWidth="147.0" text="Imagen" >
+          	<cellValueFactory>
+          		<PropertyValueFactory property="eti" />
+          	</cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

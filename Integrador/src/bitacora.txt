@@ -1,0 +1,105 @@
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 22/07/2018 18:18:39
+Descripcion: Eliminar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 28/07/2018 20:02:31
+Descripcion: Eliminar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 28/07/2018 20:02:48
+Descripcion: Reactivar
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 28/07/2018 23:06:10
+Descripcion: Agregar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo
+Fecha: 29/07/2018 01:09:00
+Descripcion: Editar
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 29/07/2018 12:12:09
+Descripcion: Agregar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 29/07/2018 12:17:04
+Descripcion: Agregar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 29/07/2018 12:22:10
+Descripcion: Agregar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 29/07/2018 12:24:19
+Descripcion: Agregar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 29/07/2018 13:41:06
+Descripcion: Agregar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 29/07/2018 13:49:33
+Descripcion: Agregar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 29/07/2018 13:57:53
+Descripcion: Agregar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 29/07/2018 13:57:53
+Descripcion: Agregar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 29/07/2018 14:30:55
+Descripcion: Agregar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 29/07/2018 14:51:40
+Descripcion: Eliminar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 31/07/2018 08:44:59
+Descripcion: Eliminar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 31/07/2018 08:45:12
+Descripcion: Eliminar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 31/07/2018 08:45:16
+Descripcion: Eliminar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 31/07/2018 08:45:18
+Descripcion: Eliminar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 31/07/2018 08:45:22
+Descripcion: Eliminar en: 
+-----------------------------------------------------------------------------------------------------------------
+Bitácora de operaciones
+Operación en: Catalogo empleados
+Fecha: 31/07/2018 08:45:24
+Descripcion: Eliminar en: 
+-----------------------------------------------------------------------------------------------------------------

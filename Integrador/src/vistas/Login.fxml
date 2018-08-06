@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="548.0" prefWidth="428.0" styleClass="background" stylesheets="@css/TemaLupe.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorAcceso">
+   <children>
+      <VBox alignment="CENTER_LEFT" layoutX="124.0" layoutY="224.0" prefHeight="200.0" prefWidth="180.0" spacing="30.0">
+         <children>
+            <Label text="Usuario:">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font></Label>
+            <TextField fx:id="txtUsuario" styleClass="label2" />
+            <Label text="Contraseña:">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font></Label>
+            <PasswordField fx:id="pfContrasena" styleClass="label2" />
+         </children>
+      </VBox>
+      <Button layoutX="190.0" layoutY="451.0" mnemonicParsing="false" onAction="#clickIniciarSesion" text="Entrar" />
+      <Label layoutX="134.0" layoutY="497.0" text="¿Olvidó su contraseña?">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="115.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/Logo%20Leo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
